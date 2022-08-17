@@ -1,8 +1,9 @@
 package com.example.domain
 
 //получить весь список покупок
-class GetShopListUseCase  {
+class GetShopListUseCase(private val shopListRepository: ShopListRepository)  {
     fun getShopList():List<ShopItem>{
-        TODO()
+
+        return shopListRepository.getShopList()
     }
 }
