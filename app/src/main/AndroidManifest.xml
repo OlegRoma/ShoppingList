@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShoppingList">
         <activity
+            android:name="com.example.presentation.ShopItemActivity"
+            android:windowSoftInputMode = "adjustResize"
+            android:exported="false" />
+        <activity
             android:name="com.example.presentation.MainActivity"
             android:exported="true">
             <intent-filter>
