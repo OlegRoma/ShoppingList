@@ -1,10 +1,11 @@
 package com.example.domain
 
 data class ShopItem(
-    var id : Int = UNDEFINED_ID,
+
     val name :String,
     val count :Int,
-    val enabled :Boolean
+    val enabled :Boolean,
+    var id : Int = UNDEFINED_ID
 )
 {       //создание константы
     companion object{
